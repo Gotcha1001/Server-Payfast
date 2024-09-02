@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "functions": {
+    "api/payment-request.js": {
+      "runtime": "node@20.x"
+    }
+  },
+  "routes": [
+    {
+      "src": "/api/payment-request",
+      "dest": "/api/payment-request.js"
+    },
+    {
+      "src": "/api/payment/notify",
+      "dest": "/api/payment-request.js"
+    }
+  ]
+}
